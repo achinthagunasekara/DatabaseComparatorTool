@@ -208,8 +208,8 @@ public class DatabaseSelector extends javax.swing.JPanel {
 	database.removeAllItems();
 	
 	try {
-	    
-	    DBConnector dbc = new DBConnector(ConnectionTypes.SYBASE, server.getText(), port.getText(), user.getText(), pass.getText());	    
+            
+	    DBConnector dbc = new DBConnector(appState.getConnectionType(), server.getText(), port.getText(), user.getText(), pass.getText());	    
    
 	    for(String s : dbc.getDatabases()) {
 		

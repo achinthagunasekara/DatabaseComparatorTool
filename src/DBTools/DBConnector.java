@@ -2,7 +2,6 @@ package DBTools;
 
 import java.sql.Connection;
 import java.sql.DriverManager;
-import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.util.ArrayList;
@@ -19,6 +18,7 @@ public class DBConnector {
     private String user;
     private String pass;
     private String dbClass;
+    private ConnectionTypes dbServerType;
     
     public DBConnector(ConnectionTypes dbServerType, String server, String port, String user, String pass) throws Exception {
 	
@@ -26,15 +26,21 @@ public class DBConnector {
 	this.port = port;
 	this.user = user;
 	this.pass = pass;
+        this.dbServerType = dbServerType;
 	
 	if(dbServerType == ConnectionTypes.SYBASE) {
 	    
 	    dbClass = "com.sybase.jdbc4.jdbc.SybDriver";
 	    dbUrl = "jdbc:sybase:Tds:" + server + ":" + port;
 	}
+        else if(dbServerType == ConnectionTypes.MicrosoftSQLServer) {
+            
+            dbClass = "com.microsoft.sqlserver.jdbc.SQLServerDriver";
+            dbUrl = "jdbc:sqlserver://" + server + ":" + port;
+        }
 	else {
 	    
-	    throw new Exception("Database server type is not supported!");
+	    throw new Exception("Database server type is not supported! - " + dbServerType);
 	}
 	
 	Class.forName(dbClass).newInstance();
@@ -58,7 +64,19 @@ public class DBConnector {
     
     public Connection createDbConnection(String database) throws SQLException {
 	
-	dbUrl = "jdbc:sybase:Tds:" + server + ":" + port + "/" + database;
+        if(dbServerType == ConnectionTypes.SYBASE) {
+	
+            dbUrl = "jdbc:sybase:Tds:" + server + ":" + port + "/" + database;
+        }
+        else if(dbServerType == ConnectionTypes.MicrosoftSQLServer) {
+            
+            dbUrl = "jdbc:sqlserver://" + server + ":" + port + ";databaseName=" + database + ";";
+        }
+        else {
+	    
+	    throw new SQLException("Database server type is not supported! - " + dbServerType);
+	}
+        
 	return DriverManager.getConnection(dbUrl, user, pass);
     }
 }
