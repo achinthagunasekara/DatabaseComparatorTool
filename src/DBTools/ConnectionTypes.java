@@ -6,6 +6,6 @@ package DBTools;
  */
 public enum ConnectionTypes {
     
-    SYBASE,
     MicrosoftSQLServer,
+    SYBASE
 }
