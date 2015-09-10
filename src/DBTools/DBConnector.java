@@ -13,12 +13,12 @@ import java.util.ArrayList;
 public class DBConnector {
  
     private String dbUrl;
-    private String server;
-    private String port;
-    private String user;
-    private String pass;
+    private final String server;
+    private final String port;
+    private final String user;
+    private final String pass;
     private String dbClass;
-    private ConnectionTypes dbServerType;
+    private final ConnectionTypes dbServerType;
     
     public DBConnector(ConnectionTypes dbServerType, String server, String port, String user, String pass) throws Exception {
 	

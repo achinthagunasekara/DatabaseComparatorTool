@@ -9,14 +9,14 @@ import java.util.ArrayList;
  */
 public class TableComparatorRunner extends Thread {
     
-    private MainFrame mf;
-    private ArrayList<String[]> dataSetOne;
-    private ArrayList<String[]> dataSetTwo;
-    private ArrayList<String> tableCols;
-    private String tableName;
-    private int[] colsToCompare;
-    private boolean checkServerOne;
-    private boolean checkServerTwo;
+    private final MainFrame mf;
+    private final ArrayList<String[]> dataSetOne;
+    private final ArrayList<String[]> dataSetTwo;
+    private final ArrayList<String> tableCols;
+    private final String tableName;
+    private final int[] colsToCompare;
+    private final boolean checkServerOne;
+    private final boolean checkServerTwo;
     
     @Override
     public void run() {

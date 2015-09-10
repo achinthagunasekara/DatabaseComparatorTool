@@ -15,7 +15,7 @@ import java.util.HashMap;
  */
 public class DBOperationManager {
     
-    private Connection con;
+    private final Connection con;
     
     public DBOperationManager(Connection con) {
 	

@@ -17,9 +17,9 @@ import javax.swing.KeyStroke;
  */
 public class AppMenu extends JMenuBar implements ActionListener, ItemListener {
     
-    private MainFrame mf;
-    private JMenu menuFile, help;
-    private JMenuItem newCon, exit, showHelp;
+    private final MainFrame mf;
+    private final JMenu menuFile, help;
+    private final JMenuItem newCon, exit, showHelp;
     
     public AppMenu(MainFrame mf) {
 	

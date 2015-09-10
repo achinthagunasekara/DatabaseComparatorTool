@@ -8,9 +8,9 @@ import java.util.ArrayList;
  */
 public class SqlStatementGenerator {
     
-    private ArrayList<String> columnNames;
-    private ArrayList<String[]> data;
-    private String tableName;
+    private final ArrayList<String> columnNames;
+    private final ArrayList<String[]> data;
+    private final String tableName;
     private StringBuilder sb;
     
     public SqlStatementGenerator(ArrayList<String> columnNames, ArrayList<String[]> data, String tableName) {
