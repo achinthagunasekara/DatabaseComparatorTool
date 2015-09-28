@@ -10,8 +10,8 @@ import java.util.ArrayList;
 import java.util.HashMap;
 
 /**
- * @author Archie Gunasekara
- * 2013.07.03
+ * @author: Archie Gunasekara
+ * @date: 2013.07.02
  */
 public class DBOperationManager {
     
