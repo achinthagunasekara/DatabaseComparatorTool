@@ -10,8 +10,8 @@ import javax.swing.JOptionPane;
 import javax.swing.border.TitledBorder;
 
 /**
- * @author Archie Gunasekara
- * 2013.07.02
+ * @author: Archie Gunasekara
+ * @date: 2013.07.02
  */
 public class TableComparator extends javax.swing.JPanel {
 
