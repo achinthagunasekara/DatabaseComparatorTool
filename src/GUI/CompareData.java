@@ -4,8 +4,8 @@ import java.util.ArrayList;
 import javax.swing.JOptionPane;
 
 /**
- * @author Archie Gunasekara
- * 2013.07.02
+ * @author: Archie Gunasekara
+ * @date: 2013.07.02
  */
 public class CompareData extends javax.swing.JPanel {
     
