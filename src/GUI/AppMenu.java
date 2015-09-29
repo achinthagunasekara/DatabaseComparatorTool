@@ -12,8 +12,8 @@ import javax.swing.JMenuItem;
 import javax.swing.KeyStroke;
 
 /**
- * @author Archie Gunasekara
- * 2013.07.03
+ * @author: Archie Gunasekara
+ * @date: 2013.07.02
  */
 public class AppMenu extends JMenuBar implements ActionListener, ItemListener {
     
