@@ -1,15 +1,11 @@
-/*
- * To change this template, choose Tools | Templates
- * and open the template in the editor.
- */
 package GUI;
 
 import DBTools.ConnectionTypes;
 import MainApp.AppStateHolder;
 
 /**
- * @author Archie Gunasekara
- * 2013.07.02
+ * @author: Archie Gunasekara
+ * @date: 2013.07.02
  */
 public class DBServerSelector extends javax.swing.JPanel {
     
