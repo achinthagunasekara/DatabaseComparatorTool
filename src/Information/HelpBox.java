@@ -3,8 +3,8 @@ package Information;
 import GUI.TextDisplayFrame;
 
 /**
- * @author Archie Gunasekara
- * 2013.07.02
+ * @author: Archie Gunasekara
+ * @date: 2013.07.02
  */
 public class HelpBox {
     
