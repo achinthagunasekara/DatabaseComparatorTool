@@ -7,8 +7,8 @@ import java.awt.Graphics2D;
 import java.awt.SplashScreen;
 
 /**
- * @author Archie Gunasekara
- * 2013.07.02
+ * @author: Archie Gunasekara
+ * @date: 2013.07.02
  */
 public class DataBaseComparatorTool {
 
