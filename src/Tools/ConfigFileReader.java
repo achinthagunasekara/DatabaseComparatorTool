@@ -3,10 +3,12 @@ package Tools;
 import java.io.FileInputStream;
 import java.io.IOException;
 import java.util.Properties;
+
 /**
- * @author Archie Gunasekara
- * 2013-05-31
+ * @author: Archie Gunasekara
+ * @date: 2013.07.02
  */
+ 
 public class ConfigFileReader {
  
     private Properties prop;
