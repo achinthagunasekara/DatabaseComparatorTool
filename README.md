@@ -1,6 +1,6 @@
 #DatabaseComparatorTool
 
-![Icon](arc/images/splash.png)
+![Icon](src/images/splash.png)
 
 Current Version
 ----------------
