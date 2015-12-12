@@ -1,5 +1,6 @@
-DatabaseComparatorTool
-======================
+#DatabaseComparatorTool
+
+
 
 Current Version
 ----------------
