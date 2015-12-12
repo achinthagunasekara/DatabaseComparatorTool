@@ -1,6 +1,6 @@
 #DatabaseComparatorTool
 
-
+![Icon](arc/images/splash.png)
 
 Current Version
 ----------------
@@ -27,5 +27,4 @@ Select a server or servers which you would like to scan for unique records.
 Also from the list box select columns you would like to compare from tables. Click “Compare” to continue.
 
 Ones the application finish comparing the data, it will display any disputes. You can generate SQL statements for these disputes by clicking “Generate SQL” button.
-
 
