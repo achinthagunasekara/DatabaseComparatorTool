@@ -4,8 +4,8 @@
 
 ##Supported DBMS
 
-Microsoft SQL Server
-Sybase
+* Microsoft SQL Server
+* Sybase
 
 *Can be modified to supprt any database by adding specific database driver to the application
 
