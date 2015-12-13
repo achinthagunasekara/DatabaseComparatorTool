@@ -2,19 +2,14 @@
 
 ![Icon](src/images/splash.png)
 
-Current Version
-----------------
-4.0
+##Supported DBMS
 
-Supported DBMS
---------------
 Microsoft SQL Server
 Sybase
 
 *Can be modified to supprt any database by adding specific database driver to the application
 
-About
------
+##About
 
 This application can be used to compare data on two tables. Currently only Sybase database is supported. However by loading JDBC drivers, this application is compatible with any database server.
 
@@ -27,4 +22,3 @@ Select a server or servers which you would like to scan for unique records.
 Also from the list box select columns you would like to compare from tables. Click “Compare” to continue.
 
 Ones the application finish comparing the data, it will display any disputes. You can generate SQL statements for these disputes by clicking “Generate SQL” button.
-
