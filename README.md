@@ -13,6 +13,8 @@
 
 This application can be used to compare data on two tables. Currently only Sybase database is supported. However by loading JDBC drivers, this application is compatible with any database server.
 
+##How to Use
+
 First, enter with your credentials. If credentials are valid for a server, it will display a list of databases available on the server. Select a database and click “Connect” to connect to it. You must connect to both databases you wish to compare before continuing.
 
 Then the application will display a list of tables on the database. Select a table and fields list will be updated automatically. Select a field and enter a where condition.
